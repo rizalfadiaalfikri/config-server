@@ -1,0 +1,10 @@
+# emp.service.url=http://localhost:678/getEmpList
+
+my:
+  greeting: Hello
+  list:
+    value: One,Tow,Three
+
+app:
+  name: My app
+  description: Welcome to ${app.name}
