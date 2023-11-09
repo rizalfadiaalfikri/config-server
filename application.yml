@@ -1,10 +1,10 @@
 # emp.service.url=http://localhost:678/getEmpList
 
 my:
-  greeting: Hello
+  greeting: Hello From Github Server
   list:
-    value: One,Tow,Three
+    value: One,Tow,Three,Four
 
 app:
-  name: My app
+  name: My app From Github Config Server
   description: Welcome to ${app.name}
