@@ -1,0 +1,8 @@
+my:
+  greeting: Greeting from spring-boot-config Microservice specific file
+  list:
+    value: One,Two,Three,Four
+
+app:
+  name: My app From Github Config Server
+  description: Welcome to ${app.name}
