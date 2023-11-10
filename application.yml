@@ -1,10 +1,18 @@
-# emp.service.url=http://localhost:678/getEmpList
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
 
-my:
-  greeting: Hello From Github Server
-  list:
-    value: One,Tow,Three,Four
-
-app:
-  name: My app From Github Config Server
-  description: Welcome to ${app.name}
+microservice:
+  payment-service:
+    endpoints:
+      endpoint:
+        uri: http://PAYMENT-SERVICE/api/payment/doPayment
+  order-service:
+    endpoints:
+      endpoint:
+        uri: http://ORDER-SERVICE/api/order/bookOrder
